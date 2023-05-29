@@ -1,0 +1,195 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.display-none{
+  @apply hidden;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+  
+body::-webkit-scrollbar {
+  display: none;
+}
+
+textarea::-webkit-scrollbar {
+  display: none;
+}
+
+.sun, .moon{
+  width: 20px;
+  cursor: pointer;
+}
+
+
+.input > input:focus, textarea:focus{
+  outline: 2px solid rgb(0, 115, 255);
+}
+
+.send-btn > button{
+  border: 1px solid black;
+}
+
+.send-btn > button:hover{
+  opacity: 0.9;
+}
+
+.send-btn > button:active{
+  margin-top: 1px;
+}
+
+
+@keyframes load {
+  0%{
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  100%{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.container-2{
+  animation: load 300ms ease-in;
+}
+
+.project-pic {
+  width: 65%;
+  height: 60%;
+  box-shadow: 0 0 2px;
+}
+
+
+.project-container{
+  width: 22rem;
+}
+
+.project-card {
+  transition: font-size 300ms ease-in;
+  transition: transform 200ms ease-in;
+}
+
+
+
+.project-card:hover{
+  transform: scale(1.04);
+}
+
+.project-link:hover{
+  text-decoration: underline;
+  font-size: 1.02rem;
+}
+
+.project-pic:hover{
+  transform: scale(1.01);
+}
+
+.first-set img, .second-set img{
+  transition: transform 200ms ease-in;
+}
+
+.first-set img:hover, .second-set img:hover{
+  transform: scale(1.04);
+}
+
+
+.skills {
+  max-width: 68.75rem;
+  margin: auto;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.skill-header {
+  margin-bottom: 1rem;
+}
+
+.skills-wrapper img {
+  padding: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.icon {
+  width: 11.25rem;
+  height: 11.25rem;
+}
+
+.icon-card {
+  border-radius: 11px;
+}
+
+
+@media only screen and (max-width:768px){
+
+  .oppa{
+    flex-direction: column;
+  }
+  .input{
+    width: 80%;
+  }
+  .send-btn{
+    margin-right: 80px;
+  }
+  .ctn-info{
+    margin-top: 8px;
+  }
+  .about{
+    text-align: center;
+    margin-left: 0;
+  }
+  .introduction{
+    flex-direction: column-reverse;
+  }
+  .image{
+    margin-bottom: 50px;
+    margin-left: 50px;
+  }
+
+  .first-set, .second-set{
+    width: 80%;
+    justify-content: space-around;
+    margin: auto;
+  }
+  .first-set img, .second-set img{
+    width: 100px;
+    height: 100px;
+  }
+  .skills{
+    width: 80%;
+
+  }
+  .icon {
+    width: 6rem;
+    height: 6rem;
+  }
+  .icon-card{
+    margin: 0;
+  }
+
+  .introduction{
+    text-align: center;
+  }
+
+  .ikons{
+    margin: auto;
+  }
+
+  .talha{
+    margin-right: 50px;
+  }
+
+  .project-card{
+    width: 20rem;
+  }
+}
+

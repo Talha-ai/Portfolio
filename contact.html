@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Let's talk 💬</title>
+  <link rel="icon" type="image/x-icon" href="Assets/Favicon port.png">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://kit.fontawesome.com/309a2b0dfc.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      visibility: hidden;
+      opacity: 0;
+    }
+  </style>
+</head>
+
+<body class="dark:bg-[#0E1217] bg-[#fffafa] text-black dark:text-[#fffafa]">
+  <nav class="container mx-auto">
+    <!-- flex container -->
+    <div class="flex items-center justify-between mx-auto max-w-4xl px-8 my-20">
+      <!-- Menu Items -->
+      <div class="flex items-center space-x-10">
+        <a href="/" class="transition duration-300 ease-in-out font-serif font-extrabold text-4xl">T</a>
+        <a href="about.html" class="transition duration-300 ease-in-ou hover:text-indigo-800 dark:hover:text-indigo-200">About</a>
+        <a href="work.html" class="transition duration-300 ease-in-out hover:text-indigo-800 dark:hover:text-indigo-200">Work</a>
+        <a href="contact.html" class="transition duration-300 ease-in-out hover:text-indigo-800 dark:hover:text-indigo-200">Contact</a>
+      </div>
+      <button class="icon-btn bg-[rgba(229,231,235)] dark:bg-[rgba(98,105,114)] p-2.5 rounded-lg">
+        <img src="Assets/sun.png" class="sun" alt="">
+        <img src="Assets/moon.png" class="moon"  alt="">
+      </button>
+    </div>
+  </nav>
+
+  <div class="container-2 mx-auto max-w-4xl px-14 my-5">
+    <h1 class="name text-4xl font-bold">Let's talk 💬</h1>
+    <p class="mt-5">Leave a message on the form below or get in touch through Discord, Twitter or email.</p>
+    
+    <div class="oppa flex justify-between">
+      <form action="#" class="form">
+
+        <div class="mt-10 w-96">
+          <div class="input">
+            <label for="Username" class="font-bold">Email</label><br>
+            <input type="text" class="rounded-md mt-2 w-full p-1 pl-5 text-lg bg-[#2121210b] dark:bg-[#ffffff0D]" name="Username"
+              id="Username" placeholder="example@gmail.com" required>
+            <div class="line"></div>
+          </div>
+
+          <div class="input mt-3">
+            <label class="password font-bold" for="message">Message</label><br>
+            <textarea name="message" cols="10" rows="2s" class="mt-2 rounded-md w-full pt-1.5 px-5 text-lg bg-[#2121210b] dark:bg-[#ffffff0D]" placeholder="Enter your queries..." required></textarea>
+            <div class="line"></div>
+          </div>
+
+          <div class="send-btn flex justify-end mt-2">
+            <button class="rounded-3xl px-6 py-2 bg-[#fff] dark:bg-[#4F46E5B3]" type="submit"><span class="text-md">Send</span></button>
+          </div>
+        </div>
+      </form>
+      <div class="ctn-info mt-16">
+        <ul class="ctn-info">
+          <li class="flex items-center justify-end space-x-2 text-right">hpstar679@gmail.com&nbsp;<i class="fa-solid fa-envelope"></i></li>
+          <li class="flex items-center justify-end space-x-2 text-right my-2">talha_codes&nbsp;<i class="fa-brands fa-twitter"></i></li>
+          <li class="flex items-center justify-end space-x-2 text-right">Felixx#9950&nbsp;<i class="fa-brands fa-discord"></i></li>
+        </ul>
+      </div>
+  </div>
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
